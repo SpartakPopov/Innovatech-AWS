@@ -16,7 +16,7 @@ resource "aws_iam_role" "github_actions" {
       Condition = {
         StringEquals = {
           "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"                                  // token must be meant for AWS STS
-          "token.actions.githubusercontent.com:sub" = "repo:SpartakPopov/Case-Study-2:ref:refs/heads/main" // only workflows running on the main branch of this repo
+          "token.actions.githubusercontent.com:sub" = "repo:SpartakPopov/Innovatech-AWS:ref:refs/heads/main" // only workflows running on the main branch of this repo
         }
       }
     }]
